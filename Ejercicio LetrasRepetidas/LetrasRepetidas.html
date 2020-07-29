@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+//fase 1
+console.log("fase 1");
+var $nombre = ["P","E","D","R","O"];
+var $i;
+
+ for($i=0;$i < $nombre.length; $i++){
+    
+    console.log($nombre[$i]);
+  
+  
+ }
+
+  </script>
+
+
+<script>
+
+  //fase 2
+  console.log("fase 2");
+  var $nombre = ["P","E",10,"D","R","O"];
+  var $i;
+
+for($i=0;$i < $nombre.length;$i++){
+      
+ switch($nombre[$i]) {
+   case "A":
+    console.log("as encontrado una VOCAL_  "+$nombre[$i]);
+      break;
+   case "E":
+    console.log("as encontrado una VOCAL_  "+$nombre[$i]);
+      break;
+  case "I":
+    console.log("as encontrado una VOCAL_  "+$nombre[$i]);
+      break;
+  case "O":
+    console.log("as encontrado una VOCAL_  "+$nombre[$i]);
+      break;
+  case "U":
+     console.log("as encontrado una VOCAL_  "+$nombre[$i]);
+      break; 
+default:
+if(!isNaN($nombre[$i])){
+       console.log("El valor no puede ser numerico  "+$nombre[$i] );
+   }else{
+console.log("as encontrado una CONSONANTE_  "+$nombre[$i]);
+
+   }
+
+
+  
+  
+ }
+}
+
+ //fase 3
+ console.log("fase 3");
+ var $map=new Map();
+        var palabra = ["A","L", "E", "J", "A", "N", "D", "R", "O"];
+
+const compara = palabra.forEach(letra => {
+
+
+  if ($map.has(letra) === false) {
+    $map.set(letra, 1)
+   } else
+    {
+      $map.set(letra, $map.get(letra)+1)
+      }
+
+
+  
+});
+
+  console.log($map);
+
+
+
+ //Fase 4
+ console.log("fase 4");
+
+ var $name =["P","E","D","R","O",""];
+ var $surname = ["C","E","C","I","L","I","A"];
+ $name.forEach(letra => {
+
+   });
+ 
+   console.log($name.concat($surname));
+
+
+
+ </script>  
+
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
